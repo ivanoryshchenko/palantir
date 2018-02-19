@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>0</title>
+  <meta name="description" content="X">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="icon" href="favicon.ico">
+  <link rel="apple-touch-icon" href="icon.png">
+
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab" rel="stylesheet">
+  <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+  <script defer src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <nav class="navbar">
+    <div class="nav-container">
+      <a class="logo" href="index.html">
+        <svg fill="#fff" width="100"  height="25" viewBox="0 0 100 25" xmlns="http://www.w3.org/2000/svg">
+          <path d="M24.4,3h6.2c2.3,0,3.8,0.1,5.1,1.5c0.9,1,1.4,2.2,1.4,3.6c0,1.4-0.5,2.6-1.5,3.6c-1,1-2.3,1.6-5.6,1.6h-3 v8.3h-2.6V3z M27,11.2H30c1.7,0,4.3-0.1,4.3-3.2c0-2.9-2.4-2.9-3.8-2.9H27V11.2z M45.4,21.6c-0.2-0.6-0.2-1.3-0.2-1.9 c-1.2,2.1-2.9,2.3-4,2.3c-3,0-4.6-1.7-4.6-3.8c0-1,0.4-2.7,2.3-3.8c1.4-0.8,3.4-0.8,4.5-0.8c0.6,0,1,0,1.7,0.1c0-1.6,0-2.3-0.5-2.9 c-0.5-0.6-1.5-0.8-2.2-0.8c-2.4,0-2.6,1.7-2.6,2.2h-2.4c0.1-0.7,0.2-1.6,0.9-2.4c1-1.1,2.8-1.4,4.2-1.4c1.9,0,3.9,0.6,4.6,1.9 c0.4,0.8,0.4,1.4,0.4,2l-0.1,6.2c0,0.2,0,1.9,0.2,3.2H45.4z M43.7,15.2c-1,0-4.7,0-4.7,2.6c0,0.8,0.5,2.2,2.7,2.2 c1.2,0,2.2-0.5,2.8-1.4c0.5-0.9,0.6-1.6,0.6-3.4C44.7,15.3,44.3,15.2,43.7,15.2z M49.6,3H52v18.6h-2.4V3z M62.4,21.6 c-0.2-0.6-0.2-1.3-0.2-1.9c-1.2,2.1-2.9,2.3-4,2.3c-3,0-4.6-1.7-4.6-3.8c0-1,0.4-2.7,2.3-3.8c1.4-0.8,3.4-0.8,4.5-0.8 c0.6,0,1,0,1.7,0.1c0-1.6,0-2.3-0.5-2.9c-0.5-0.6-1.5-0.8-2.2-0.8c-2.4,0-2.6,1.7-2.6,2.2h-2.4c0.1-0.7,0.2-1.6,0.9-2.4 c1-1.1,2.8-1.4,4.2-1.4c1.9,0,3.9,0.6,4.6,1.9c0.4,0.8,0.4,1.4,0.4,2l-0.1,6.2c0,0.2,0,1.9,0.2,3.2H62.4z M60.8,15.2 c-1,0-4.7,0-4.7,2.6c0,0.8,0.5,2.2,2.7,2.2c1.2,0,2.2-0.5,2.8-1.4c0.5-0.9,0.6-1.6,0.6-3.4C61.7,15.3,61.4,15.2,60.8,15.2z M66.7,10.2l0-1.5h2.4l0,2.1c0.3-0.5,1.2-2.3,4.1-2.3c1.2,0,4.7,0.4,4.7,4.4v8.8h-2.5v-8.2c0-0.8-0.1-1.6-0.7-2.2 c-0.6-0.6-1.5-0.9-2.3-0.9c-1.8,0-3.4,1.3-3.4,3.9v7.4h-2.4V10.2z M78.7,8.7H81V5.9l2.4-0.8v3.5h2.9v1.8h-2.9v7.7 c0,0.6,0,1.7,1.7,1.7c0.5,0,1-0.1,1.2-0.1v1.9c-0.4,0.1-1.1,0.2-2,0.2C82,21.8,81,21.1,81,19v-8.6h-2.3V8.7z M88,3h2.9v2.7H88V3z M88.2,8.7h2.4v12.9h-2.4V8.7z M92.9,11.3c0-0.9-0.1-1.8-0.1-2.6h2.4l0.1,2.5c0.5-1.8,2-2.4,3.1-2.5c0.7-0.1,1.3-0.1,1.7-0.1v2.4 c-0.1,0-0.3-0.1-0.5-0.1c-0.2,0-0.4,0-0.7,0c-2.9,0-3.5,1.7-3.5,3.9v6.9h-2.4V11.3z M9.5,0.5c-5,0-9.1,4.1-9.1,9.1s4.1,9.1,9.1,9.1 c5,0,9.1-4.1,9.1-9.1S14.5,0.5,9.5,0.5z M9.5,15.9c-3.5,0-6.3-2.8-6.3-6.3c0-3.5,2.8-6.3,6.3-6.3c3.5,0,6.3,2.8,6.3,6.3 C15.7,13.1,12.9,15.9,9.5,15.9z M17.6,17.9l-8.1,3.5l-8.1-3.5L0,20.4l9.5,4l9.5-4L17.6,17.9z"></path>
+        </a>
+      <ul class="menu">
+        <li class="drop"><a href="#">Products</a>
+          <ul class="drop-content">
+            <li href="" class="item"><a href="#">Palantir Gotham</a></li>
+            <li href="" class="item"><a href="#">Palantir Foundry</a></li>
+          </ul>
+        </li>
+        <li class="drop"><a href="#">Solutions</a>
+          <ul class="drop-content wide">
+            <li href="" class="item"><a href="#">Capital Markets</a></li>
+            <li href="" class="item"><a href="#">Case Management</a></li>
+            <li href="" class="item"><a href="#">Crisis Response</a></li>
+            <li href="" class="item"><a href="#">Legal Intelligence</a></li>
+            <li href="" class="item"><a href="#">Mergers & Acquisitions</a></li>
+            <li href="" class="item"><a href="#">Disaster Preparedness</a></li>
+            <li href="" class="item"><a href="#">Financial Compliance</a></li>
+          </ul>
+        </li>
+        <li class="drop"><a href="#">Careers</a>
+          <ul class="drop-content wide">
+            <li href="" class="item"><a href="#">Engineering Culture</a></li>
+            <li href="" class="item"><a href="#">Getting Hired</a></li>
+            <li href="" class="item"><a href="#">Students</a></li>
+            <li href="" class="item"><a href="#">Scholarships</a></li>
+            <li href="" class="item"><a href="#">Explore Careers</a></li>
+          </ul>
+        </li>
+        <li class="drop"><a href="#">About</a>
+          <ul class="drop-content wide">
+            <li href="" class="item"><a href="#">What We Believe</a></li>
+            <li href="" class="item"><a href="#">Diversity</a></li>
+            <li href="" class="item"><a href="#">Philantropic Engineering</a></li>
+            <li href="" class="item"><a href="#">Library</a></li>
+            <li href="" class="item"><a href="#">Media</a></li>
+          </ul>
+        </li>
+        <li class="contact"><a href="#">Contact</a></li>
+      </ul>
+      <div class="bars"><i class="fa fa-bars fa-2x"></i></div>
+    </div>
+  </nav>
+
+  <header>
+    <div class="video-wrapper">
+      <video playsinline autoplay muted>
+          <source src="img/bg-vd.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class="hero-wrapper">
+      <div class="hero-container">
+        <h1>Products built<br>for a purpose</h1>
+        <p>More than a decade ago, we set out to create products that would transform the way organizations use their data. Today, our products are deployed at the most critical government, commercial, and non-profit institutions in the world to solve problems
+          we hadn’t even dreamed of back then.
+        </p>
+        <a href="#" class="btn">
+          <div>This is our story</div><i class="fas fa-angle-right fa-lg"></i>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="first">
+      <div class="wrapper">
+        <div class="first-text">
+          <h1>SCALE, SPEED, AGILITY</h1>
+          <p>We build products that <b>make people better at their most important work</b> — the kind of work you read about on the front page of the newspaper, not just the technology section.</p>
+        </div>
+        <div class="features">
+          <article class="feature" style="margin-left: 0;">
+            <img class="ft" src="https://www.palantir.com/build/images/home/preview-3.svg" alt="">
+            <div class="feature-text">
+              <h4>DATA FUSION <br>PLATFORMS</h4>
+              <p>Back-end infrastructure for integrating, managing, and securing data of any kind, from any source, at massive scale.</p>
+            </div>
+          </article>
+          <article class="feature">
+            <img class="ft" src="https://www.palantir.com/build/images/home/preview-2.svg" alt="">
+            <div class="feature-text">
+              <h4>ANALYTICAL <br>APPLICATIONS</h4>
+              <p>User interfaces that enable people to interact smoothly with data, ask better questions, and make better decisions.</p>
+            </div>
+          </article>
+          <article class="feature">
+            <img class="ft" src="https://www.palantir.com/build/images/home/preview-1.svg" alt="">
+            <div class="feature-text">
+              <h4>FOR ANY <br>DATA PROBLEM</h4>
+              <p>Proven technology that can be deployed today, adapts to any domain, and produces operational results in weeks.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="second">
+      <div class="second-container">
+        <div class="description-part">
+          <div class="second-text">
+            <h1 style="color: #fff;">OUR PRODUCTS</h1>
+            <p style="color: #fff;">We build data fusion platforms for integrating, managing, and securing any kind of data, at massive scale. On top of these platforms, we layer applications for fully interactive, human-driven, machine-assisted analysis.</p>
+          </div>
+        </div>
+        <div class="products-part">
+          <div class="products">
+            <article class="product" style="margin-bottom: 80px;">
+              <h4>GOTHAM</h4>
+              <p>Integrate, manage, secure, and analyze all of your enterprise data.</p>
+              <a href="" class="btn-inv">Learn about Gotham</a>
+            </article>
+            <article class="product">
+              <h4>FOUNDRY</h4>
+              <p>Amplify and extend the power of data integration.</p>
+              <a href="" class="btn-inv">Learn about Foundry</a>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="third">
+      <div class="third-container">
+        <div class="believe">
+          <div class="third-text">
+            <p>Palantir is a mission-focused company. Our team is dedicated to working for the common good and doing what's right, in addition to being deeply passionate about building great software and a successful company.</p>
+          </div>
+          <div class="btn-container">
+            <a href="#" class="a-btn">What we believe</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="fourth">
+      <div class="fourth-container">
+        <div class="first-text">
+          <h1>OUR SOLUTIONS</h1>
+          <p>Our products are used throughout the public, private, and non-profit sectors to help organizations quickly implement solutions to the hardest problems they face.</p>
+        </div>
+        <div class="solutions">
+          <article class="solution">
+            <img class="sl" src="https://www.palantir.com/build/images/solutions/solution-capital-markets-thumb.png" alt="">
+            <div class="solution-text">
+              <h4>CAPITAL MARKETS</h4>
+              <p>Interact with disparate data, conduct in-depth analysis, and discover more valuable insights in a unified, customizable environment.</p>
+              <a href="" class="more">Read more <i class="fas fa-angle-right"></i></a>
+            </div>
+          </article>
+          <article class="solution">
+            <img class="sl" src="https://www.palantir.com/build/images/solutions/solution-capital-markets-thumb.png" alt="">
+            <div class="solution-text">
+              <h4>CAPITAL MARKETS</h4>
+              <p>Interact with disparate data, conduct in-depth analysis, and discover more valuable insights in a unified, customizable environment.</p>
+              <a href="" class="more">Read more <i class="fas fa-angle-right"></i></a>
+            </div>
+          </article>
+          <article class="solution">
+            <img class="sl" src="https://www.palantir.com/build/images/solutions/solution-capital-markets-thumb.png" alt="">
+            <div class="solution-text">
+              <h4>CAPITAL MARKETS</h4>
+              <p>Interact with disparate data, conduct in-depth analysis, and discover more valuable insights in a unified, customizable environment.</p>
+              <a href="" class="more">Read more <i class="fas fa-angle-right"></i></a>
+            </div>
+          </article>
+          <article class="solution">
+            <img class="sl" src="https://www.palantir.com/build/images/solutions/solution-capital-markets-thumb.png" alt="">
+            <div class="solution-text">
+              <h4>CAPITAL MARKETS</h4>
+              <p>Interact with disparate data, conduct in-depth analysis, and discover more valuable insights in a unified, customizable environment.</p>
+              <a href="" class="more">Read more <i class="fas fa-angle-right"></i></a>
+            </div>
+          </article>
+          <article class="solution">
+            <img class="sl" src="https://www.palantir.com/build/images/solutions/solution-capital-markets-thumb.png" alt="">
+            <div class="solution-text">
+              <h4>CAPITAL MARKETS</h4>
+              <p>Interact with disparate data, conduct in-depth analysis, and discover more valuable insights in a unified, customizable environment.</p>
+              <a href="" class="more">Read more <i class="fas fa-angle-right"></i></a>
+            </div>
+          </article>
+          <article class="solution">
+            <img class="sl" src="https://www.palantir.com/build/images/solutions/solution-capital-markets-thumb.png" alt="">
+            <div class="solution-text">
+              <h4>CAPITAL MARKETS</h4>
+              <p>Interact with disparate data, conduct in-depth analysis, and discover more valuable insights in a unified, customizable environment.</p>
+              <a href="" class="more">Read more <i class="fas fa-angle-right"></i></a>
+            </div>
+          </article>
+          <article class="solution">
+            <img class="sl" src="https://www.palantir.com/build/images/solutions/solution-capital-markets-thumb.png" alt="">
+            <div class="solution-text">
+              <h4>CAPITAL MARKETS</h4>
+              <p>Interact with disparate data, conduct in-depth analysis, and discover more valuable insights in a unified, customizable environment.</p>
+              <a href="" class="more">Read more <i class="fas fa-angle-right"></i></a>
+            </div>
+          </article>
+          <article class="solution">
+            <img class="sl" src="https://www.palantir.com/build/images/solutions/solution-capital-markets-thumb.png" alt="">
+            <div class="solution-text">
+              <h4>CAPITAL MARKETS</h4>
+              <p>Interact with disparate data, conduct in-depth analysis, and discover more valuable insights in a unified, customizable environment.</p>
+              <a href="" class="more">Read more <i class="fas fa-angle-right"></i></a>
+            </div>
+          </article>
+
+          <a href="#" class="learn">
+            <div>Learn more</div><i class="fas fa-angle-right fa-lg"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="last">
+      <div class="last-container">
+        <div class="news">
+          <div class="news-content">
+            <h1>LATEST NEWS</h1>
+            <div class="news-container">
+              <div class="news-item">
+                <p class="news-text">Dansk politi advarer forbrydere: Vi er klar med et »supervåben«</p>
+                <p class="news-text">Berlingske — February 10, 2017</p>
+              </div>
+              <div class="news-item">
+                <p class="news-text">Dansk politi advarer forbrydere: Vi er klar med et »supervåben«</p>
+                <p class="news-text">Berlingske — February 10, 2017</p>
+              </div>
+              <div class="news-item">
+                <p class="news-text">Dansk politi advarer forbrydere: Vi er klar med et »supervåben«</p>
+                <p class="news-text">Berlingske — February 10, 2017</p>
+              </div>
+              <div class="news-item">
+                <p class="news-text">Dansk politi advarer forbrydere: Vi er klar med et »supervåben«</p>
+                <p class="news-text">Berlingske — February 10, 2017</p>
+              </div>
+              <div class="news-item">
+                <p class="news-text">Dansk politi advarer forbrydere: Vi er klar med et »supervåben«</p>
+                <p class="news-text">Berlingske — February 10, 2017</p>
+              </div>
+              <div class="news-item">
+                <p class="news-text">Dansk politi advarer forbrydere: Vi er klar med et »supervåben«</p>
+                <p class="news-text">Berlingske — February 10, 2017</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer">
+          <div class="footer-container">
+            <ul class="foomenu">
+              <li class="foodrop"><a href="#">Products</a>
+                <ul class="foodrop-content">
+                  <li href="" class="footem"><a href="#">Palantir Gotham</a></li>
+                  <li href="" class="footem"><a href="#">Palantir Foundry</a></li>
+                </ul>
+              </li>
+              <li class="foodrop"><a href="#">Solutions</a>
+                <ul class="foodrop-content">
+                  <li href="" class="footem"><a href="#">Capital Markets</a></li>
+                  <li href="" class="footem"><a href="#">Case Management</a></li>
+                  <li href="" class="footem"><a href="#">Crisis Response</a></li>
+                  <li href="" class="footem"><a href="#">Legal Intelligence</a></li>
+                  <li href="" class="footem"><a href="#">Mergers & Acquisitions</a></li>
+                  <li href="" class="footem"><a href="#">Disaster Preparedness</a></li>
+                  <li href="" class="footem"><a href="#">Financial Compliance</a></li>
+                </ul>
+              </li>
+              <li class="foodrop"><a href="#">Careers</a>
+                <ul class="foodrop-content">
+                  <li href="" class="footem"><a href="#">Engineering Culture</a></li>
+                  <li href="" class="footem"><a href="#">Getting Hired</a></li>
+                  <li href="" class="footem"><a href="#">Students</a></li>
+                  <li href="" class="footem"><a href="#">Scholarships</a></li>
+                  <li href="" class="footem"><a href="#">Explore Careers</a></li>
+                </ul>
+              </li>
+              <li class="foodrop"><a href="#">About</a>
+                <ul class="foodrop-content">
+                  <li href="" class="footem"><a href="#">What We Believe</a></li>
+                  <li href="" class="footem"><a href="#">Diversity</a></li>
+                  <li href="" class="footem"><a href="#">Philantropic Engineering</a></li>
+                  <li href="" class="footem"><a href="#">Library</a></li>
+                  <li href="" class="footem"><a href="#">Media</a></li>
+                </ul>
+              </li>
+              <li class="foodrop"><a href="#"></a>
+                <ul class="foodrop-content">
+                  <li href="" class="footes"><a href="#">Palantir Docs</a></li>
+                  <li href="" class="footes"><a href="#">Partnerships</a></li>
+                  <li href="" class="footes"><a href="#">Site Map</a></li>
+                </ul>
+              </li>
+            </ul>
+            <div class="verylast">
+              <p>© 2018 Palantir Technologies</p>
+              <p>Terms of Use</p>
+              <p>Privacy and Security Statement</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  </div>
+
+
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $(".fa-bars").on("click", function() {
+        $(".menu .drop").toggleClass("showing");
+      });
+    });
+  </script>
+
+</body>
+
+</html>
