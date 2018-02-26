@@ -416,9 +416,9 @@ video {
 
 .solutions {
   display: flex;
-  justify-content: center;
-  width: 75%;
   flex-wrap: wrap;
+  justify-content: center;
+  width: 80%;
 }
 
 .solution:nth-child(odd) {
@@ -426,17 +426,19 @@ video {
 }
 
 .solution {
+  width: 35%;
   display: flex;
-  align-items: flex-start;
   margin-bottom: 80px;
 }
 
 .sl {
   width: 120px;
+  height: 120px;
 }
 
 .solution-text {
   margin-left: 40px;
+  max-width: auto;
 }
 
 .solution-text h4 {
@@ -452,7 +454,6 @@ video {
   font-size: 14px;
   color: #394b59;
   font-family: 'Roboto';
-  max-width: 240px;
 }
 
 .more {
@@ -581,6 +582,14 @@ video {
   color: #fff;
   opacity: 0.4;
   margin-right: 20px;
+}
+
+.white {
+  background: #fff;
+}
+
+.white .drop a {
+   color: #000;
 }
 
 @media only screen and (max-width: 768px) {
