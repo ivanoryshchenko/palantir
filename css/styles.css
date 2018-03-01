@@ -37,12 +37,13 @@ a, a:hover {
   top: 0;
   left: 0;
   width: 100%;
-  padding: 40px;
+  padding: 20px;
   z-index: 2;
 }
 
 .nav-container {
   display: flex;
+  align-items: center;
   justify-content: space-between;
 }
 
@@ -116,13 +117,50 @@ a, a:hover {
   color: rgba(255, 255, 255, 0.8);
 }
 
-.nav-container.white * {
-  background: rgba(255, 255, 255, 0.9);
-}
-
 .bars {
   display: none;
+}
+
+.white .bars {
+  display: none;
+  color: #000;
+}
+
+.white .menu .drop a {
+  text-transform: uppercase;
+  color: #000;
+}
+
+.white .logo svg {
+  fill: #000;
+}
+
+.white .menu .drop:hover {
+  background: #000;
+}
+
+.white .menu .drop:hover a {
   color: #fff;
+}
+
+.white .menu .drop:hover>.drop-content {
+  background: #000;
+  color: #E0E0E0;
+}
+
+.white .menu .drop:hover>.drop-content li a {
+  font-weight: normal;
+  color: #E0E0E0;
+  text-transform: capitalize;
+}
+
+.white .menu .drop:hover>ul li a:hover {
+  font-weight: normal;
+  color: #fff;
+}
+
+.white .menu .contact a {
+  color: rgba(0, 0, 0, 0.6);
 }
 
 video {
@@ -497,7 +535,9 @@ video {
 .last-container {
   padding-top: 120px;
   padding-bottom: 120px;
-  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background: url(https://www.palantir.com/build/images/home/footer-background.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -513,6 +553,7 @@ video {
 }
 
 .news-content {
+    width: 90%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -534,9 +575,11 @@ video {
 
 .news-container {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  width: 75%;
+  justify-content: space-between;
+}
+
+.news-column {
+  width: 45%;
 }
 
 .news-item {
@@ -547,15 +590,12 @@ video {
   opacity: 0.6;
 }
 
-.news-item:nth-child(2n) {
-  margin-left: 80px;
-}
-
 .footer-container {
-  padding: 0 160px;
+  margin: 0 auto;
 }
 
 .footer {
+  width: 80%;
   margin-top: 120px;
 }
 
@@ -586,24 +626,9 @@ video {
 
 .white {
   background: #fff;
+  box-shadow: 0 5px 10px rgba(10, 12, 15, .15);
 }
 
 .white .drop a {
    color: #000;
-}
-
-@media only screen and (max-width: 768px) {
-  .drop {
-    max-height: 0;
-    background: green;
-  }
-  .menu {
-    display: none;
-  }
-  .bars {
-    display: block;
-  }
-  .showing {
-    max-height: 20em;
-  }
 }
